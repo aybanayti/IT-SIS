@@ -1,0 +1,334 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../imgs/bggggg.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    border-radius: 30px;
+    margin: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.form-box {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 30px 30px 0;
+    background: rgb(244, 214, 244);
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+.container h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.container h3 {
+    text-align: left;
+    padding-left: 25px;
+    margin: 0 0;
+}
+
+.input-box {
+    position: relative;
+    margin: 4px 0;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.input-box select {
+    color: gray;
+    width: 80%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px black;
+    font-size: 13px;
+    background-color: white;
+}
+
+.input-box label {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+.input-box input {
+    position: relative;
+    left: 2px;
+    width: 80%;
+    padding: 5px;
+    background: white;
+    border-radius: 3px;
+    border: 30px black;
+    outline: 1px;
+    font-size: 13px;
+    display: block;
+}
+
+.input-box input::placeholder {
+    color: gray;
+    font-weight: 500;
+}
+
+.bttn {
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    background: purple;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+}
+button:hover {
+    transform: scale(1.03);
+}
+
+.bysubmit {
+    font-size: 13px;
+    color: black;
+}
+
+.policy {
+    font-size: 13px;
+
+}
+
+.left {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    transform: translate(-50%);
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0;
+}
+
+.text {
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7)
+}
+
+.welcome {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    align-items: center;
+    margin-top: 25%;
+    font-family: 'League Spartan', sans-serif;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7)
+}
+
+.tagline {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.login {
+    font-size: 13px;
+    color: black;
+}
+
+.login2 {
+    font-size: 13px;
+    color: black;
+}
+
+@media (max-width: 391px) {
+
+    .container {
+        position: relative;
+        width: 350px;
+        height: 620px;
+        border-radius: 30px;
+        margin: 35px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        margin-top: 140px;
+    }
+
+    .form-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px 30px 0 0;
+        background: rgba(234, 116, 234, 0.5);
+        text-align: center;
+    }
+
+    .left {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        color: white;
+    }
+
+    .welcome {
+        margin-top: 100px;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bolder;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9)
+    } 
+
+    .login2 {
+        margin-top: 595px;
+        text-align: center;
+        font-size: 13px;
+        color: black;
+    }
+    
+    .tagline {
+        font-size: 10px;
+        font-weight: 200;
+        font-style: italic;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    }
+
+    .logo {
+        position: fixed;
+        left: 40px;
+        top: 0;
+    }
+
+    .logo text {
+        text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.9);
+    }
+
+    .container h3 {
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        text-shadow: black;
+    }
+
+    .container h1 {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .input-box input::placeholder {
+        text-align: center;
+        font-size: 13px;
+        color: gray;
+        font-weight: 500;
+    }
+
+    .input-box input {
+        position: relative;
+        align-items: center;
+        width: 80%;
+        padding: 7px;
+        background: rgb(255, 255, 255);
+        border-radius: 8px;
+        border: 1px solid black;
+        font-size: 13px;
+        display: block;
+    }
+
+    .input-box {
+        position: relative;
+        margin: 4px 0;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    .bttn {
+        margin-top: 15px;
+        width: 70%;
+        height: 50px;
+        background: rgb(85, 47, 191);
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: white;
+        font-weight: 600;
+        transition: 0.1s ease-in-out;
+    }
+
+    .input-box select {
+        color: gray;
+        width: 80%;
+        padding: 7px;
+        border-radius: 8px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 13px;
+        background-color: white;
+    }
+
+    .input-box label {
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+        
+    }
+    .logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .input-box input, 
+    .input-box select {
+        position: relative;
+        z-index: 99999;
+    }
+
+    .bttn {
+        display: block ;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+        visibility: visible ;
+        position: relative ;
+        z-index: 9999 ;
+}
+}
